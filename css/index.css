@@ -1,0 +1,23 @@
+ 
+.addbutton {
+  background-color: #239c4d;
+  border: none;
+  margin: 2px;
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px; */
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.itembutton 
+ {
+  background-color: rgb(227, 229, 232);
+ padding: 5px 15px;
+ border-radius: 10px;
+ border: 2px solid black;
+  
+ }
+
+ 

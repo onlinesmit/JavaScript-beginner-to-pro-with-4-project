@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket game</title>
+
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bat Ball Stump Game</h1>
+
+  
+    <button onclick="
+    // const userChoiceMsg = 'You choose bat !! ';
+
+     let val = Math.random() * 3;
+     let computerChoice;
+
+    if(val <= 1 && val > 0){
+      computerChoice = 'Bat';
+      // console.log('Computer choose bat !');
+      // console.log(`Computer Choice is ${computerChoice}`);
+    }
+    else if(val <= 2 && val > 1){
+      computerChoice = 'Ball';
+      // console.log('Computer choose ball !');
+      // console.log(`Computer Choice is ${computerChoice}`);
+    }
+    else{
+      computerChoice = 'Stump';
+      // console.log('Computer choose Stump !!');
+      // console.log(`Computer Choice is ${computerChoice}`);
+    }
+
+    // console.log(`Computer Choice is ${computerChoice}`);
+    // const compChoiceMsg = `${computerChoice}`;
+
+    let resultMsg;
+    if(computerChoice ==='Ball'){
+      resultMsg = 'User won !!';
+    }
+    else if (computerChoice ==='Bat'){
+      resultMsg = `It's a tie !!`;
+    }
+    else if (computerChoice ==='Stump'){
+     resultMsg = `Computer Won !! !!`;
+    }
+
+    // alert(`${userChoiceMsg} ${compChoiceMsg} ${resultMsg}`);
+
+    alert(`User choice msg is: Ball. computer choice msg is: ${computerChoice}. & result: ${resultMsg}`);
+
+    ">Bat</button>
+
+    <button  onclick=" 
+     val = Math.random() * 3;
+     computerChoice;
+
+    if(val <= 1 && val > 0){
+      computerChoice = 'Bat';
+     
+    }
+    else if(val <= 2 && val > 1){
+      computerChoice = 'Ball';
+      
+    }
+    else{
+      computerChoice = 'Stump';
+     
+    }
+
+    resultMsg;
+    if(computerChoice ==='Stump'){
+      resultMsg = 'User won !!';
+    }
+    else if (computerChoice ==='Ball'){
+      resultMsg = `It's a tie !!`;
+    }
+    else if (computerChoice ==='Bat'){
+     resultMsg = `Computer Won !!`;
+    }
+
+    alert(`User choice msg is: Ball. computer choice msg is: ${computerChoice}. & result: ${resultMsg}`);
+    ">Ball</button>
+
+    <button onclick=" 
+    val = Math.random() * 3;
+    computerChoice;
+
+    if(val <= 1 && val > 0){
+      computerChoice = 'Bat';
+  
+    }
+    else if(val <= 2 && val > 1){
+      computerChoice = 'Ball';
+    }
+    else{
+      computerChoice = 'Stump';
+    }
+
+    resultMsg;
+    if(computerChoice ==='Bat'){
+      resultMsg = 'User won !!';
+    }
+    else if (computerChoice ==='Stump'){
+      resultMsg = `It's a tie !!`;
+    }
+    else if (computerChoice ==='Ball'){
+     resultMsg = `Computer Won !! !!`;
+    }
+
+    alert(`User choice msg is: Stump. computer choice msg is: ${computerChoice}. & result: ${resultMsg}`); ">Stump</button>
+  
+</body>
+</html>

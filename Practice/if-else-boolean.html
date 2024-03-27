@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if else boolean</title>
+</head>
+<body>
+  
+  <h1>Metro ticketing </h1>
+
+  <script>
+    let age =7;
+    let gender = 'female';
+    let finalvalue;
+
+    if(age <= 5){
+      finalvalue = 100;
+    }
+    else if ( age <= 8 || gender === 'female'){
+      finalvalue = 50;
+    }
+    else if (age >= 65){
+      finalvalue =30;
+    }
+    else{
+      finalvalue =0;
+    }
+
+    console.log(`Your Ticket discount will be: ${finalvalue}`);
+    
+
+  </script>
+
+</body>
+</html>

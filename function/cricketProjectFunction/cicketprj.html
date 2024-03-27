@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket game: </title>
+
+  <style> 
+  body{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+    
+  <h1>Cricket Game: </h1>
+
+  
+  <button onclick="
+    generateComputerChoice();
+   
+    let resValue;
+    if(computerChoice === 'Bat'){
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Ball'){
+      resValue = 'User won: ';
+    }
+    else{
+      resValue = 'Computer has won: ';
+    }
+
+    alert(`You have chosen Bat. computer coice ${computerChoice} and final value is ${resValue} `);
+
+    ">Bat</button>
+
+    
+  <button onclick="
+  generateComputerChoice();
+
+  
+    if(computerChoice === 'Ball'){
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Stump'){
+      resValue = 'User won: ';
+    }
+    else{
+      resValue = 'Computer has won: ';
+    }
+
+  alert(`You have chosen Ball. computer coice ${computerChoice} and final value is ${resValue} `);
+  ">Ball</button>
+
+  <button onclick="
+  generateComputerChoice();
+
+   
+    if(computerChoice === 'Stump'){
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Bat'){
+      resValue = 'User won: ';
+    }
+    else{
+      resValue = 'Computer has won: ';
+    }
+
+
+  alert(`You have chosen Stump. computer coice ${computerChoice} and final value is ${resValue} `);
+  ">Stump</button>
+
+  <script>
+
+    let computerChoice;
+
+    function generateComputerChoice(){
+
+      let randomNumber = Math.random() * 3;
+      if(randomNumber <= 1 && randomNumber > 0){
+        computerChoice = 'Bat';
+      }
+      else if (randomNumber <= 2 && randomNumber > 1){
+        computerChoice = 'Ball';
+      }
+      else{
+        computerChoice = 'Stump';
+      }
+    }
+
+  </script>
+</body>
+</html>
