@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket game: </title>
+
+  <style> 
+  body{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+    
+  <h1>Cricket Game: </h1>
+
+  
+  <button onclick="
+ computerChoice = generateComputerChoice();
+   
+    let resValue;
+    if(computerChoice === 'Bat'){
+      score.tie++;
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Ball'){
+      score.uwin++;
+      resValue = 'User won: ';
+    }
+    else{
+      score.cwin++;
+      resValue = 'Computer has won: ';
+    }
+
+    // console.log(score);
+    alert(`You have chosen Bat. computer coice ${computerChoice} and final value is ${resValue} Score will be UserWon: ${score.uwin} Tie: ${score.tie} ComputerWon: ${score.cwin}`);
+
+    ">Bat</button>
+
+    
+  <button onclick="
+   computerChoice = generateComputerChoice();
+  
+    if(computerChoice === 'Ball'){
+      score.tie++;
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Stump'){
+      score.uwin++;
+      resValue = 'User won: ';
+    }
+    else{
+      score.cwin++;
+      resValue = 'Computer has won: ';
+    }
+  
+
+    // console.log(score);
+  alert(`You have chosen Ball. computer coice ${computerChoice} and final value is ${resValue} 
+  Score will be UserWon: ${score.uwin} Tie: ${score.tie} ComputerWon: ${score.cwin}`);
+  ">Ball</button>
+
+  <button onclick="
+ computerChoice = generateComputerChoice();
+
+   
+    if(computerChoice === 'Stump'){
+      score.tie++;
+      resValue = 'Its a tie: ';
+    }
+    else if (computerChoice === 'Bat'){
+      score.uwin++;
+      resValue = 'User won: ';
+    }
+    else{
+      score.cwin++;
+      resValue = 'Computer has won: ';
+    }
+
+  // console.log(score);
+  alert(`You have chosen Stump. computer coice ${computerChoice} and final value is ${resValue} 
+  Score will be UserWon: ${score.uwin} Tie: ${score.tie} ComputerWon: ${score.cwin}
+  `);
+  ">Stump</button>
+
+  <script>
+
+    let score = {
+      uwin: 0,
+      tie: 0,
+      cwin: 0,
+
+      displayScore: function() {
+        
+      }
+    };
+
+    let computerChoice;
+
+    function generateComputerChoice(){
+
+      let randomNumber = Math.random() * 3;
+      if(randomNumber <= 1 && randomNumber > 0){
+        computerChoice = 'Bat';
+      }
+      else if (randomNumber <= 2 && randomNumber > 1){
+        computerChoice = 'Ball';
+      }
+      else{
+        computerChoice = 'Stump';
+      }
+
+      return computerChoice;  //return value
+    }
+
+  </script>
+</body>
+</html>
