@@ -10,7 +10,7 @@ let scoreStr = localStorage.getItem('Score');
       };
 
       score.displayScore = function() {
-        return `Score: Won:${score.win}, Lost:${score.lost}, Tie: ${score.tie}`;
+        return `Score: Won:${score.win}, Lost: ${score.lost}, Tie: ${score.tie}`;
       };
 
       showResult();

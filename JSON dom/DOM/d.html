@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+</head>
+<body>
+  <!-- <button class="my_button">Click me</button>   -->
+  <!-- run on command prompt:  document.querySelector('button').classList
+  output will be: DOMTokenList ['my_button', value: 'my_button'] -->
+
+  <div class="my_div">Click me</div>
+
+  <script>
+
+    let button = document.createElement('Button');
+    button.innerText = 'Click me..';
+    document.querySelector('.my_div').appendChild(button);
+    document.querySelector('.my_div').removeChild(button);
+
+  </script>
+</body>
+</html>
