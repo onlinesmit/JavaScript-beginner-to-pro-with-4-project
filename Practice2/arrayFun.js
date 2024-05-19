@@ -28,10 +28,28 @@
 
 // f()  //calling
 
+// function fun(sub){
+//     console.log("Subject is: "+sub)
+// }
 
-function fun(sub){
-    console.log("Subject is: "+sub)
+// fun("Maths")
+// fun("CS")
+
+
+//first class function 
+// higher order function   
+function sum (a, b){  //basic function
+    return a+b;
 }
 
-fun("Maths")
-fun("CS")
+let diff = (a, b) => a-b;  // arrow function
+// function diff(a, b) {
+//     return a-b;
+// }
+
+function calculate(otherFun, a, b) {
+    return otherFun(a,b);
+}
+
+console.log(calculate(sum, 4, 5));  //9
+console.log(calculate(diff, 7, 5));  //2
